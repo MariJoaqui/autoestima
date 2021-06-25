@@ -1,4 +1,61 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background: rgb(113,190,175);
+    background: linear-gradient(90deg, rgba(113,190,175,1) 15%, rgba(54,164,235,1) 40%, rgba(226,75,182,1) 60%, rgba(227,166,209,1) 85%);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#encabezado h1 {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#navegacion {
+    text-align: right;
+    padding: 30px 0;
+    width: 95%;
+}
+
+#navegacion a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+    text-align:right;
+}
+
+#navegacion a:hover {
+    text-decoration: underline;
+}
+
+#Autoestima {
+    background-color: #B5EDF0;
+}
+
+#Autoestima h2 {
+    font-size: 35px;
+    padding: 20px;
+    padding-left: 60px;
+}
+
+#pie {
+    background-color: #71beaf;
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    font-size: 18px;
+    float: none;
+    color: #fff;
 }
