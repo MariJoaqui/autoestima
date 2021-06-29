@@ -1,48 +1,92 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Dancing Script', cursive;
+    text-align: justify;
 }
 
-header {
-    width: 100%;
-    height: 180px;
+.titulo {
     background: rgb(113,190,175);
     background: linear-gradient(90deg, rgba(113,190,175,1) 15%, rgba(54,164,235,1) 40%, rgba(226,75,182,1) 60%, rgba(227,166,209,1) 85%);
     background-size: cover;
-    background-attachment: fixed;
+    width: 100%;
+    background-size: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 450px;
+}
+
+.logo {
+    flex: 1;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    margin-right: 10px;
+    margin-left: 50px;
+    margin-bottom: 0;
+    padding-top: 0;
 }
 
 #encabezado h1 {
-    color: #fff;
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 60px;
+    flex: 2;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 550px;
+    color: white;
+    font-size: 60px;
+    margin-right: 0;
+    padding-bottom: 30px;
 }
 
 #navegacion {
-    text-align: right;
-    padding: 30px 0;
-    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 450px;
+    background: rgb(113,190,175);
 }
 
-#navegacion a {
-    color: #fff;
+#navegacion ul {
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+#navegacion ul li {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+#navegacion ul li a {
+    font-size: 20px;
+    display: block;
+    color: white;
+    padding: 20px;
     text-decoration: none;
     font-weight: bold;
-    padding: 15px;
-    text-align: right;
+    border-radius: 5px;
 }
 
 #navegacion a:hover {
+    background-color: rgba(227,166,209,1);
     text-decoration: underline;
 }
 
 #Autoestima {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 450px;
     background-color: #B5EDF0;
     width: 100%;
-    height: 400px;
+}
+
+.r1 {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 60px;
 }
 
 #Autoestima img {
@@ -51,29 +95,37 @@ header {
     height: 300px;
     width: 350px;
     padding: 30px;
-    margin-top: 50px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 0;
+    margin-left: 0px;
     border-radius: 20%;
 }
 
 #Autoestima p {
     font-size: 22px;
-    text-align: justify;
+    margin-top: 30px;
+    margin-left: 20px;
     margin-right: 35px;
 }
 
-
 #Autoestima h2 {
-    font-size: 35px;
-    padding: 40px;
-    padding-left: 70px;
+    font-size: 40px;
+    padding-top: 45px;
+    padding-left: 15%;
 }
 
 #Tipos {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 450px;
     background-color: #F3DDF5;
     width: 100%;
-    height: 1120px;
+}
+
+.r2 {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 60px;
 }
 
 #Tipos img {
@@ -82,16 +134,18 @@ header {
     height: 300px;
     width: 350px;
     padding: 30px;
-    margin-top: 50px;
+    margin-top: 0;
     margin-right: 20px;
     margin-left: 20px;
     border-radius: 20%;
 }
 
 #Tipos h2 {
-    font-size: 35px;
-    padding: 40px;
-    text-align: center;
+    font-size: 40px;
+    padding-top: 45px;
+    padding-left: 15%;
+    margin-right: 50px;
+    padding-bottom: 40px;
 }
 
 #Tipos h3 span {
@@ -103,27 +157,38 @@ header {
     margin-right: 15px;
     margin-left: 50px;
     margin-top: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     width: 30px;
     padding: 2px;
 }
 
 #Tipos h3 {
     font-size: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #Tipos p {
     font-size: 22px;
-    text-align: justify;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
     margin-left: 50px;
     margin-right: 50px;
 }
 
 #Caracteristicas {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 450px;
     background-color: #F3F3CC;
     width: 100%;
-    height: 400px;
+}
+
+.r3 {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 60px;
 }
 
 #Caracteristicas img {
@@ -132,70 +197,128 @@ header {
     height: 300px;
     width: 350px;
     padding: 30px;
-    margin-top: 50px;
+    margin-top: 0;
     margin-right: 20px;
     margin-left: 20px;
     border-radius: 20%;
 }
 
 #Caracteristicas h2 {
-    font-size: 35px;
-    padding: 40px;
+    font-size: 40px;
+    padding-top: 45px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 20px;
 }
 
 #Caracteristicas p {
     font-size: 22px;
-    text-align: justify;
+    margin-top: 35px;
     margin-left: 50px;
     margin-right: 50px;
 }
 
 #Contacto {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 450px;
     background-color: #4CC8E8;
-    height: 400px;
     width: 100%;
     text-align: center;
     padding: 50px;
     background-size: 100% 100%;
 }
 
-#transparente h2{
-    font-size: 35px;
+#Contacto h2 {
+    font-size: 40px;
+    padding-top: 0;
+    padding-left: 15%;
+    padding-bottom: 20px;
 }
 
-.input{
+.r4 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.orden {
+    flex: 1; 
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.input {
     width: 300px;
     height: 30px;
     margin-bottom: 20px;
     margin-top: 20px;
     border-radius: 5px;
     color:#000000;
-    float: right;
+}
+
+.orden1 {
+    flex: 2;
     margin-right: 20px;
 }
 
 .textarea{
     width: 300px;
     color:#000000;
-    float: none;
+    float: right;
     margin-bottom: 20px;
     margin-top: 20px;
     border-radius: 5px;
     height: 170px;
 }
 
+.orden2 {
+    position: relative;
+    padding-top: 90px;
+}
+
 .button{
-    width: 300px;
+    width: 100px;
+    height: 30px;
     color:#000000;
+}
+
+.foot {
+    background-color: #71beaf;
+    height: 80px;
+    width: 100%;
     float: none;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 450px;
 }
 
 #pie {
-    background-color: #71beaf;
     text-align: center;
-    height: 70px;
-    width: 100%;
     font-size: 18px;
-    float: none;
     color: #fff;
+    margin-left: 38%;
+}
+
+@media only screen and (max-width: 819px) {
+
+    #navegacion ul li {
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #navegacion ul li a {
+        font-size: 15px;
+        display: block;
+        color: white;
+        padding: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
 }
